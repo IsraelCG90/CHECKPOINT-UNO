@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*--------------------------HEADER----------------------------*/
+
+header {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    display: flex;
+    justify-content: start;
+}
+
+.divUno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    height: 2.5rem;
+    padding: 0rem 0.5rem;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+nav>a {
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+}
+
+/*--------------------------MAIN----------------------------*/
+
+main {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    margin-top: 0.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.primera, .segunda {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: 0.5rem 0rem;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.primera {
+    gap: 2rem;
+    padding: 0.5rem 0rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+article>img {
+    width: 14rem;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+table, td, th {
+    font-size: 0.6rem;
+    border: 1px solid black;
+    border-spacing: 0.1rem;
+}
+
+td, th {
+    padding: 0.1rem 0.2rem;
+}
+
+.segunda {
+    gap: 1rem;
+    height: 10rem;
+    justify-content: center;
+}
+
+/*--------------------------FOOTER----------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-top: auto;
+    height: 8rem;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    padding: 0.5rem 0rem;
+}
+
+footer>a {
+    color: white;
+}
+
+/*--------------------------TABLET----------------------------*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .segunda {
+        flex-direction: row;
+        width: 40rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    table, td, th {
+        font-size: 1rem;
+        border-spacing: 0.1rem;
+    }
+    
+    td, th {
+        padding: 0.2rem 0.3rem;
+    }
+    footer {
+        flex-direction: row;
+        height: 6rem;
+    }
+}
+
+/*--------------------------PC----------------------------*/
+
+@media (min-width: 1024px) {
+    
+    .primera, .segunda {
+        margin: 1.6rem 0rem;
+    }
+
+    .primera {
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-around;
+        padding: 0rem 0.5rem;
+    }
+
+    article {
+        width: 19rem;
+        margin: 1rem 0rem;
+    }
+
+    article>img {
+        width: 18rem;
+        height: 13rem;
+        border-radius: 2rem;
+    }
+
+    .segunda {
+        flex-direction: row;
+        width: 95%;
+        height: 15rem;
+        gap: 2rem;
+        justify-content: space-around;
+        align-items: start;
+        padding-top: 1rem;
+    }
+
+    table, td, th {
+        font-size: 1rem;
+        border-spacing: 0.1rem;
+    }
+    
+    td, th {
+        padding: 1rem 1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        height: 4.5rem;
+    }
+}
